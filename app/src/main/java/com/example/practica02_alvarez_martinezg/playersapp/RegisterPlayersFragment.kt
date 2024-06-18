@@ -22,6 +22,12 @@ class RegisterPlayersFragment : Fragment() {
 
 private lateinit var spCountry: Spinner
 private lateinit var spPlayerType: Spinner
+    private lateinit var etPlayerNickName: EditText
+    private lateinit var etPlayerName: EditText
+    private lateinit var etPlayerDorsal: EditText
+    private lateinit var etPlayerTeam: EditText
+    private lateinit var etPlayerImage: EditText
+    private lateinit var btPlayerSave: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,12 +37,12 @@ private lateinit var spPlayerType: Spinner
         val view: View = inflater.inflate(R.layout.fragment_register_players, container, false)
         spCountry = view.findViewById(R.id.spCountry)
         spPlayerType = view.findViewById(R.id.spPlayerType)
-        val etPlayerNickName: EditText = view.findViewById(R.id.etPlayerNickName)
-        val etPlayerName: EditText = view.findViewById(R.id.etPlayerName)
-        val etPlayerDorsal: EditText = view.findViewById(R.id.etPlayerDorsal)
-        val etPlayerTeam: EditText = view.findViewById(R.id.etPlayerTeam)
-        val etPlayerImage: EditText = view.findViewById(R.id.etPlayerImage)
-        val btPlayerSave: Button = view.findViewById(R.id.btPlayerSave)
+        etPlayerNickName = view.findViewById(R.id.etPlayerNickName)
+        etPlayerName = view.findViewById(R.id.etPlayerName)
+        etPlayerDorsal = view.findViewById(R.id.etPlayerDorsal)
+        etPlayerTeam = view.findViewById(R.id.etPlayerTeam)
+        etPlayerImage = view.findViewById(R.id.etPlayerImage)
+        btPlayerSave = view.findViewById(R.id.btPlayerSave)
 
         loadSpinnerData()
 
@@ -117,11 +123,20 @@ private lateinit var spPlayerType: Spinner
             .add(player)
             .addOnSuccessListener {
                 Toast.makeText(requireContext(), "Player data saved successfully", Toast.LENGTH_SHORT).show()
-                // Clear the form or navigate to another screen
+                clearFields()
             }
             .addOnFailureListener { e ->
                 Toast.makeText(requireContext(), "Error saving player data: ${e.message}", Toast.LENGTH_SHORT).show()
             }
+    }
+    private fun clearFields() {
+        etPlayerNickName.text.clear()
+        etPlayerName.text.clear()
+        etPlayerDorsal.text.clear()
+        etPlayerTeam.text.clear()
+        etPlayerImage.text.clear()
+        spCountry.setSelection(0)
+        spPlayerType.setSelection(0)
     }
 }
 

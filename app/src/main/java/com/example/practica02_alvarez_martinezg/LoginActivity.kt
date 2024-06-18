@@ -54,6 +54,9 @@ class LoginActivity : AppCompatActivity() {
                             , Snackbar.LENGTH_LONG
                         ).show()
                     }
+                    // Limpiar los campos de email y contraseña
+                    etEmailLogin.text.clear()
+                    etPasswordLogin.text.clear()
                 }
         }
     }

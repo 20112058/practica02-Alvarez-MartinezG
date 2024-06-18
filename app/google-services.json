@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "304641686181",
+    "project_id": "pc2alvarezmartinez2024",
+    "storage_bucket": "pc2alvarezmartinez2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304641686181:android:0646b51b46bdd9cfcc2b4c",
+        "android_client_info": {
+          "package_name": "com.example.practica02_alvarez_martinezg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBavnLp8wPlfLFWPDWXbspZEf2xTFG3CQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

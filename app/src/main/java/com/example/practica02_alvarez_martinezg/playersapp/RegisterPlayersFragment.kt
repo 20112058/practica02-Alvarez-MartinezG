@@ -13,7 +13,7 @@ import android.widget.RadioGroup
 import android.widget.Spinner
 import android.widget.Toast
 import com.example.practica02_alvarez_martinezg.R
-import com.example.practica02_alvarez_martinezg.model.PlayersModel
+import com.example.practica02_alvarez_martinezg.model.PlayersModelD
 import com.google.firebase.firestore.FirebaseFirestore
 
 
@@ -109,7 +109,7 @@ private lateinit var spPlayerType: Spinner
             return
         }
 
-        val player = PlayersModel(
+        val player = PlayersModelD(
             pname = etPlayerName.text.toString(),
             pcountry = spCountry.selectedItem.toString(),
             ptype = spPlayerType.selectedItem.toString(),

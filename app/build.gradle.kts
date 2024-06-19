@@ -57,4 +57,8 @@ dependencies {
 
     //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+
+
+    //Picasso
+    implementation("com.squareup.picasso:picasso:2.71828")
 }

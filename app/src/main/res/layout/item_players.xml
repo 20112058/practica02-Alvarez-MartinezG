@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/base" />
 
     <ImageView
-        android:id="@+id/pimagen"
+        android:id="@+id/ivPimagen"
         android:layout_width="99dp"
         android:layout_height="106dp"
         android:layout_marginTop="88dp"
@@ -49,7 +49,7 @@
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/pimagen"
+        app:layout_constraintEnd_toStartOf="@+id/ivPimagen"
         app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/tvPtype" />
@@ -64,17 +64,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pimagen" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPimagen" />
 
     <TextView
         android:id="@+id/tvPapodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="TextView"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -87,7 +87,7 @@
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/pimagen"
+        app:layout_constraintEnd_toStartOf="@+id/ivPimagen"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -107,8 +107,8 @@
 
     <TextView
         android:id="@+id/tvPteam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:text="team"
@@ -144,7 +144,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toStartOf="@+id/pimagen"
+        app:layout_constraintEnd_toStartOf="@+id/ivPimagen"
         app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPtype"

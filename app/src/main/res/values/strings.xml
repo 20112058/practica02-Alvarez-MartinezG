@@ -5,4 +5,18 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="emailLogin">Email</string>
+    <string name="passwordLogin">Password</string>
+    <string name="LoginBt">Login</string>
+    <string name="RegisterBt">Register</string>
+    <string name="nickname">Nickname</string>
+    <string name="dorsal">Dorsal</string>
+    <string name="urlImage">Url Image</string>
+    <string name="PlayerName">Name</string>
+    <string name="PlayerType">Type</string>
+    <string name="PlayerTeam">Team</string>
+    <string name="Country">Country</string>
+    <string name="type">Type</string>
+    <string name="numberDorsal">Number</string>
+    <string name="SavePlayer">Save</string>
 </resources>

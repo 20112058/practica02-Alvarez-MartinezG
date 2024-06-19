@@ -43,7 +43,7 @@ class PlayersAdapter (private var lstPlayers: List<PlayersModel>):
         if (itemPlayer.pimagen != null){
             Picasso.get()
                 .load(itemPlayer.pimagen)
-                .resize(400, 350)
+                .resize(300, 350)
                 .into(holder.ivPlayer)
         } else {
             holder.ivPlayer.setImageResource(R.drawable.logo_player_final)

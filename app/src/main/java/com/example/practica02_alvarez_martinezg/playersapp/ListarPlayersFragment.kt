@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practica02_alvarez_martinezg.Adapter.PlayersAdapter
-import com.example.practica02_alvarez_martinezg.Model.PlayersModel
+import com.example.practica02_alvarez_martinezg.model.PlayersModel
 import com.example.practica02_alvarez_martinezg.R
 import com.google.firebase.firestore.FirebaseFirestore
 

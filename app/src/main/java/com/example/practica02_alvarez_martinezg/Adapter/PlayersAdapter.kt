@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.practica02_alvarez_martinezg.Model.PlayersModel
 import com.example.practica02_alvarez_martinezg.R
+import com.example.practica02_alvarez_martinezg.model.PlayersModel
 import com.squareup.picasso.Picasso
 
 class PlayersAdapter (private var lstPlayers: List<PlayersModel>):
@@ -36,11 +36,11 @@ class PlayersAdapter (private var lstPlayers: List<PlayersModel>):
         val itemPlayer = lstPlayers[position]
         holder.tvName.text = lstPlayers[position].pname
         holder.tvCountry.text = lstPlayers[position].pcountry
-        holder.tvDorsal.text = lstPlayers[position].pdorsal
+        holder.tvDorsal.text = lstPlayers[position].pdorsal.toString()
         //Importar a Picasso
         Picasso.get()
             .load(itemPlayer.pimagen)
-            .resize(350, 350)
+            .resize(320, 350)
             .into(holder.ivPlayer)
         holder.tvTeam.text = lstPlayers[position].pteam
         holder.tvType.text = lstPlayers[position].ptype

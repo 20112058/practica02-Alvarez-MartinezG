@@ -5,7 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".playersapp.RegisterPlayersFragment" >
+    android:background="#F6F6F6"
+    tools:context=".playersapp.RegisterPlayersFragment">
 
     <EditText
         android:id="@+id/etPlayerNickName"
@@ -34,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/etPlayerDorsal"
@@ -138,11 +139,11 @@
         app:layout_constraintTop_toBottomOf="@+id/etPlayerImage" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="112dp"
-        android:layout_height="127dp"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/logo_player2"
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="191dp"
+        android:background="#F6F6F6"
+        android:src="@drawable/logo_player_final"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
